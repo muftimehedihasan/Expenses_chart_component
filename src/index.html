@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spending Chart</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-beige">
+    <div class="container mx-auto p-6 max-w-md">
+        <div class="bg-orange-300 p-4 rounded-lg text-white flex justify-between items-center">
+            <div>
+                <p>My balance</p>
+                <h1 class="text-3xl font-bold">$921.48</h1>
+            </div>
+            <div class="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center"></div>
+        </div>
+
+        <div class="bg-cream p-6 mt-4 rounded-lg shadow-lg">
+            <h2 class="text-xl font-bold mb-4">Spending – Last 7 days</h2>
+            <div id="chart" class="flex justify-between items-end h-48">
+                <!-- Bars will be dynamically generated here -->
+            </div>
+            <div class="border-t border-gray-300 mt-4 pt-4">
+                <div class="flex justify-between">
+                    <div>
+                        <p>Total this month</p>
+                        <h1 class="text-3xl font-bold">$478.33</h1>
+                    </div>
+                    <p class="text-green-600">+2.4% from last month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
